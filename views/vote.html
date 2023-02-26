@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram | voting</title>
+  <link rel = "icon" href = 
+    "../static/logo.png" 
+            type = "image/x-icon">
+  <link rel="stylesheet" href="../static/voteStyle.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Which one is best? <br></header>
+    <div class="poll-area">
+      <input type="checkbox" name="poll" id="opt-1">
+      <input type="checkbox" name="poll" id="opt-2">
+      <label for="opt-1" class="opt-1">
+        <div class="row">
+          <div class="column"><img src="../static/apsc.png" alt="picture">
+            <span class="circle"></span>
+            <span class="text">APSC</span>
+          </div>
+          <span class="percent">49%</span>
+        </div>
+        <div class="progress" id="pstyle1" style='--w:49;'></div>
+      </label>
+      <label for="opt-2" class="opt-2">
+        <div class="row">
+          <div class="column"> <img src="../static/jpsc.jpg" alt="picture">
+            <span class="circle"></span>
+            <span class="text">JPSC</span>
+          </div>
+          <span class="percent">51%</span>
+        </div>
+        <div class="progress" id="pstyle2" style='--w:51;'></div>
+      </label>
+      
+      
+    </div>
+  </div>
+  <script src="../static/vote.js"></script>
+</body>
+</html>
